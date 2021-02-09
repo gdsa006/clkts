@@ -11,6 +11,7 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="bootnavbar.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <title>Clocktos</title>
 
 
@@ -95,7 +96,7 @@
 
 
     section#main-hero{
-      height: calc(100vh - 141px);
+      height: calc(80vh - 141px);
     }
 
     section#main-hero img{
@@ -110,7 +111,7 @@
 
     @media only screen and (min-width: 768px) {
       .navbar {
-        height: 120px !important;
+        height: 115px !important;
       }
 
       .navbar-expand-lg .navbar-nav .nav-link {
@@ -129,8 +130,9 @@
 
       #top-bar {
         padding: 10px 0;
-        background-color: darksalmon;
+        background-color: #ffffff;
         display: block;
+        border-bottom: solid 1px #f5f5f5;
       }
 
       #top-bar ul {
@@ -149,12 +151,18 @@
       }
 
       #top-bar li a {
-        color: #ffffff;
+        color: rgba(0,0,0,.5);
         font-size: 0.85rem;
       }
 
       #top-bar #divider {
-        color: #ffffff;
+        color:rgba(0,0,0,.5);
+      }
+
+      #top-bar li a i{
+        background-image: linear-gradient(to right top, #bd77bb, #c977b3, #d277aa, #d979a2, #df7b99, #e27f92, #e3838c, #e38886, #e18e82, #de947f, #db9a7e, #d7a07e);
+        	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
       }
 
       .navbar-expand-lg .navbar-nav .dropdown-menu {
@@ -195,7 +203,7 @@
             </li>
             <span id="divider" class="d-none">|</span>
             <li>
-              <a href="#">test@clocktos.com</a>
+              <a href="#"><i class="fa fa-envelope"></i> test@clocktos.com</a>
             </li>
           </ul>
         </div>
