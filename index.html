@@ -534,6 +534,7 @@
 
     main#main-hero{
       height: calc(90vh - 141px);
+      position: relative;
     }
 
     main#main-hero img{
@@ -543,6 +544,24 @@
       object-position: bottom;
     }
 
+    main#main-hero .caption{
+      top: 50%; transform: translate(0,-50%);position: absolute;
+    }
+
+    main#main-hero .caption .heading-text{
+      margin-bottom: 13px;
+    }
+
+    main#main-hero .caption .heading-text h2{
+      color: #fafafa;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    main#main-hero .caption .body-text{
+      color: #fafafa;
+      margin-right: 840px;
+          }
 
     section#top-action{
       background-color: #222;
@@ -759,7 +778,14 @@
   <img src="images/home-banner.jpg">
   <div class="container">
     <div class="row">
-
+        <div class="caption">
+          <div class="heading-text">
+          <h2>Educational ERP Solutions</h2>
+          </div>
+          <div class="body-text">
+            We are global services provider delivering technology-driven business solutions that meet the strategic objectives of our clients.
+          </div>
+        </div>
     </div>
   </div>
 </main>
