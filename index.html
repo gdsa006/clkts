@@ -467,10 +467,42 @@
 }
 
     body {
-      background-color: #fafafa;
+      background-color: #000000;
       font-family: 'Roboto';
     }
 
+    .fixed {
+    position: fixed;
+    top:-31px; left:0;
+    width: 100%;
+    z-index: 9;
+    animation: smoothScroll 1s forwards;
+ }
+
+ @keyframes smoothScroll {
+	0% {
+		transform: translateY(-81px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+.header-up{
+  animation: smoothHeaderScroll 1000ms forwards;
+  position: relative;
+  top: 810px;
+  z-index: 9;
+}
+
+@keyframes smoothHeaderScroll {
+	0% {
+    top:81px;
+	}
+	100% {
+    top: 0;
+	}
+}
     p,
     ul {
       font-size: 14px;
@@ -478,6 +510,11 @@
 
     nav {
       background-color: #000;
+      -webkit-transition: all 0.5s ease;
+  -moz-transition: position 10s;
+  -ms-transition: position 10s;
+  -o-transition: position 10s;
+  transition: all 0.5s ease;
     }
 
     .navbar-light .navbar-brand {
@@ -573,27 +610,19 @@
         height: 100%;
     }
     .swiper-slide {
-        text-align: center;
         font-size: 18px;
-        background: #fff;
-        
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
+    }
+    .swiper-slide #icon{
+      text-align: center;
+      margin-bottom: 8px;
+
     }
 
-
-
+    .swiper-slide #text{
+      text-align: center;
+      color: 18px;
+      color: #A1A1A1;
+    }
 
     @media only screen and (min-width: 768px) {
 
@@ -608,6 +637,7 @@
       }
       section{
         padding: 6vh 0;
+        background-color: #ffffff;
       }
 
       section .section-title{
@@ -641,7 +671,7 @@
       }
 
       #top-bar {
-        padding: 10px 0;
+        padding: 5px 0;
         background-color: #292929;
         display: block;
       }
@@ -803,21 +833,18 @@
         <div class="swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
-                <div class="swiper-slide">Slide 10</div>
+                <div class="swiper-slide"><div id="icon"><img src="images/icons/support.png" width="70"></div><div id="text">Support</div></div>
+                <div class="swiper-slide"><div id="icon"><img src="images/icons/ai.png" width="70"></div><div id="text">Artificial Intelligence </div></div>
+                <div class="swiper-slide"><div id="icon"><img src="images/icons/security.png" width="70"></div><div id="text">Multi-Level Security</div></div>
+                <div class="swiper-slide"><div id="icon"><img src="images/icons/institutions.png" width="70"></div><div id="text">Multiple Institutions</div></div>
+                <div class="swiper-slide"><div id="icon"><img src="images/icons/erp.png" width="70"></div><div id="text">ERP</div></div>
+                <div class="swiper-slide"><div id="icon"><img src="images/icons/cloud.png" width="70"></div><div id="text">Cloud</div></div>
+                <div class="swiper-slide"><div id="icon"><img src="images/icons/try-buy.png" width="70"></div><div id="text">Try & Buy</div></div> 
             </div>
     
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
         </div>
     </div>   
 
@@ -1006,11 +1033,11 @@
         spaceBetween: 20,
         breakpoints: {
             1920: {
-                slidesPerView: 3,
+                slidesPerView: 5,
                 spaceBetween: 30
             },
             1028: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 30
             },
             480: {
@@ -1021,6 +1048,16 @@
     });
 });
 
+  </script>
+
+  <script>
+    $(window).scroll(function(){
+  var header = $('header'),
+      scroll = $(window).scrollTop();
+
+  if (scroll >= 160){ (header).addClass('fixed');header.removeClass('header-up');}
+  else {header.removeClass('fixed'); (header).addClass('header-up');}
+});
   </script>
 </body>
 
