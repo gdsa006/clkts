@@ -529,6 +529,11 @@
       color: #A1A1A1;
     }
 
+    .navbar-light .navbar-nav .active>.nav-link{
+            color: darksalmon;
+
+    }
+
     #top-bar {
       display: none;
     }
@@ -764,7 +769,7 @@
         <a class="navbar-brand" href="#"><img src="images/logo-test.png"</a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item dropdown">
@@ -833,13 +838,13 @@
         <div class="swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><div id="icon"><img src="images/icons/support.png" width="70"></div><div id="text">Support</div></div>
-                <div class="swiper-slide"><div id="icon"><img src="images/icons/ai.png" width="70"></div><div id="text">Artificial Intelligence </div></div>
-                <div class="swiper-slide"><div id="icon"><img src="images/icons/security.png" width="70"></div><div id="text">Multi-Level Security</div></div>
-                <div class="swiper-slide"><div id="icon"><img src="images/icons/institutions.png" width="70"></div><div id="text">Multiple Institutions</div></div>
-                <div class="swiper-slide"><div id="icon"><img src="images/icons/erp.png" width="70"></div><div id="text">ERP</div></div>
-                <div class="swiper-slide"><div id="icon"><img src="images/icons/cloud.png" width="70"></div><div id="text">Cloud</div></div>
-                <div class="swiper-slide"><div id="icon"><img src="images/icons/try-buy.png" width="70"></div><div id="text">Try & Buy</div></div> 
+                <div class="swiper-slide" data-swiper-autoplay="2000"><div id="icon"><img src="images/icons/support.png" width="70"></div><div id="text">Support</div></div>
+                <div class="swiper-slide" data-swiper-autoplay="2000"><div id="icon"><img src="images/icons/ai.png" width="70"></div><div id="text">Artificial Intelligence </div></div>
+                <div class="swiper-slide" data-swiper-autoplay="2000"><div id="icon"><img src="images/icons/security.png" width="70"></div><div id="text">Multi-Level Security</div></div>
+                <div class="swiper-slide" data-swiper-autoplay="2000"><div id="icon"><img src="images/icons/institutions.png" width="70"></div><div id="text">Multiple Institutions</div></div>
+                <div class="swiper-slide" data-swiper-autoplay="2000"><div id="icon"><img src="images/icons/erp.png" width="70"></div><div id="text">ERP</div></div>
+                <div class="swiper-slide" data-swiper-autoplay="2000"><div id="icon"><img src="images/icons/cloud.png" width="70"></div><div id="text">Cloud</div></div>
+                <div class="swiper-slide" data-swiper-autoplay="2000"><div id="icon"><img src="images/icons/try-buy.png" width="70"></div><div id="text">Try & Buy</div></div> 
             </div>
     
             <!-- If we need navigation buttons -->
@@ -1031,6 +1036,7 @@
         slidesPerView: 3,
         paginationClickable: true,
         spaceBetween: 20,
+        autoplay: 1,
         breakpoints: {
             1920: {
                 slidesPerView: 5,
