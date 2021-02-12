@@ -13,779 +13,57 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="styles.css">
   <title>ERP Software for Educational Institutes in India | School Management Software | College Management Software</title>
-
-
-  <style>
-    /* roboto-regular - latin */
-    @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v15/0eC6fl06luXEYWpBSJvXCIX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v15/Fl4y0QdOxyyTHEGMXX8kcYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v15/-L14Jk06m6pUHB-5mXQQnYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v15/I3S1wsgSg9YCurV6PUkTOYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v15/NYDWBdD4gIq26G5XYbHsFIX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v15/Pru33qjShpZSmG3z6VYwnYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfZBw1xU1rKptJj_0jans920.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v15/sTdaA6j0Psb920Vjv-mrzH-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v15/uYECMKoHcO9x1wdmbyHIm3-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v15/tnj4SB6DNbdaQnsM8CFqBX-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v15/_VYFx-s824kXq_Ul2BHqYH-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v15/NJ4vxlgWwWbEsv18dAhqnn-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v15/Ks_cVxiCiwUWVsFWFA3Bjn-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v15/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Roboto Medium'), local('Roboto-Medium'), url(http://fonts.gstatic.com/s/roboto/v15/ZLqKeelYbATG60EpZBSDy4X0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Roboto Medium'), local('Roboto-Medium'), url(http://fonts.gstatic.com/s/roboto/v15/oHi30kwQWvpCWqAhzHcCSIX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Roboto Medium'), local('Roboto-Medium'), url(http://fonts.gstatic.com/s/roboto/v15/rGvHdJnr2l75qb0YND9NyIX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Roboto Medium'), local('Roboto-Medium'), url(http://fonts.gstatic.com/s/roboto/v15/mx9Uck6uB63VIKFYnEMXrYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Roboto Medium'), local('Roboto-Medium'), url(http://fonts.gstatic.com/s/roboto/v15/mbmhprMH69Zi6eEPBYVFhYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Roboto Medium'), local('Roboto-Medium'), url(http://fonts.gstatic.com/s/roboto/v15/oOeFwZNlrTefzLYmlVV1UIX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Roboto Medium'), local('Roboto-Medium'), url(http://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUZBw1xU1rKptJj_0jans920.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v15/77FXFjRbGzN4aCrSFhlh3oX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v15/isZ-wbCXNKAbnjo6_TwHToX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v15/UX6i4JxQDm3fVTc1CPuwqoX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v15/jSN2CGVDbcVyCnfJfjSdfIX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v15/PwZc-YbIL414wB9rB1IAPYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v15/97uahxiqZRoncBaCEI3aW4X0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOJBw1xU1rKptJj_0jans920.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 300;
-  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(http://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at_ZraR2Tg8w2lzm7kLNL0-w.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 300;
-  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(http://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at14sYYdJg5dU2qzJEVSuta0.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 300;
-  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(http://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at1BW26QxpSj-_ZKm_xT4hWw.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 300;
-  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(http://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0atwt_Rm691LTebKfY2ZkKSmI.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 300;
-  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(http://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at9DiNsR5a-9Oe_Ivpu8XWlY.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 300;
-  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(http://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at6E8kM4xWR1_1bYURRojRGc.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 300;
-  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(http://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at4gp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Roboto Italic'), local('Roboto-Italic'), url(http://fonts.gstatic.com/s/roboto/v15/WxrXJa0C3KdtC7lMafG4dRkAz4rYn47Zy2rvigWQf6w.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Roboto Italic'), local('Roboto-Italic'), url(http://fonts.gstatic.com/s/roboto/v15/OpXUqTo0UgQQhGj_SFdLWBkAz4rYn47Zy2rvigWQf6w.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Roboto Italic'), local('Roboto-Italic'), url(http://fonts.gstatic.com/s/roboto/v15/1hZf02POANh32k2VkgEoUBkAz4rYn47Zy2rvigWQf6w.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Roboto Italic'), local('Roboto-Italic'), url(http://fonts.gstatic.com/s/roboto/v15/cDKhRaXnQTOVbaoxwdOr9xkAz4rYn47Zy2rvigWQf6w.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Roboto Italic'), local('Roboto-Italic'), url(http://fonts.gstatic.com/s/roboto/v15/K23cxWVTrIFD6DJsEVi07RkAz4rYn47Zy2rvigWQf6w.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Roboto Italic'), local('Roboto-Italic'), url(http://fonts.gstatic.com/s/roboto/v15/vSzulfKSK0LLjjfeaxcREhkAz4rYn47Zy2rvigWQf6w.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Roboto Italic'), local('Roboto-Italic'), url(http://fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByXYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 500;
-  src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url(http://fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0fZraR2Tg8w2lzm7kLNL0-w.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 500;
-  src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url(http://fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0V4sYYdJg5dU2qzJEVSuta0.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 500;
-  src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url(http://fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0VBW26QxpSj-_ZKm_xT4hWw.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 500;
-  src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url(http://fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0Qt_Rm691LTebKfY2ZkKSmI.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 500;
-  src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url(http://fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0dDiNsR5a-9Oe_Ivpu8XWlY.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 500;
-  src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url(http://fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0aE8kM4xWR1_1bYURRojRGc.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 500;
-  src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url(http://fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0Ygp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(http://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC_ZraR2Tg8w2lzm7kLNL0-w.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(http://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC14sYYdJg5dU2qzJEVSuta0.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(http://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC1BW26QxpSj-_ZKm_xT4hWw.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(http://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcCwt_Rm691LTebKfY2ZkKSmI.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(http://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC9DiNsR5a-9Oe_Ivpu8XWlY.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(http://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC6E8kM4xWR1_1bYURRojRGc.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(http://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC4gp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-
-    body {
-      background-color: #000000;
-      font-family: 'Roboto';
-    }
-    section.module.parallax-1 {
-  background-image: url("images/pexels-fauxels-3184407.jpg");
-  background-position: 50% 0;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: rgba(0,123,255,0.4);
-  background-blend-mode: screen;
-}
-section.module.parallax-2 {
-  background-image: url("http://www.psd-dude.com/tutorials/resources-images/free-rain-and-raindrop-textures-for-photoshop/raindrops-window-background.jpg");
-  background-position: 50% 0;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: rgba(0,123,255,0.4);
-  background-blend-mode: screen;
-}
-section.module.parallax-3 {
-  background-image: url("http://www.psd-dude.com/tutorials/resources-images/free-rain-and-raindrop-textures-for-photoshop/raindrops-window-background.jpg");
-  background-position: 50% 0;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: rgba(0,123,255,0.4);
-  background-blend-mode: screen;
-}
-
-
-    .fixed {
-    position: fixed;
-    top:-31px; left:0;
-    width: 100%;
-    z-index: 9;
-    animation: smoothScroll 1s forwards;
- }
-
- @keyframes smoothScroll {
-	0% {
-		transform: translateY(-81px);
-	}
-	100% {
-		transform: translateY(0px);
-	}
-}
-
-.header-up{
-  animation: smoothHeaderScroll 1000ms forwards;
-  position: relative;
-  top: 810px;
-  z-index: 9;
-}
-
-@keyframes smoothHeaderScroll {
-	0% {
-    top:81px;
-	}
-	100% {
-    top: 0;
-	}
-}
-    p,
-    ul {
-      font-size: 14px;
-    }
-
-    .row-v-spacing{
-      margin-bottom: 30px;
-    }
-
-    nav {
-      background-color: #000;
-      -webkit-transition: all 0.5s ease;
-  -moz-transition: position 10s;
-  -ms-transition: position 10s;
-  -o-transition: position 10s;
-  transition: all 0.5s ease;
-    }
-
-    .navbar-light .navbar-brand {
-      color: darksalmon;
-    }
-
-    .navbar-light .navbar-nav .navbar-brand{
-      display: none;
-    }
-
-    .navbar-light .navbar-nav .nav-link{
-      color: #A1A1A1;
-    }
-
-    .navbar-light .navbar-nav .active>.nav-link{
-            color: darksalmon;
-
-    }
-
-    #top-bar {
-      display: none;
-    }
-
-    footer {
-      background-color: #252525;
-      padding: 30px 0;
-    }
-
-    footer .footer-links {}
-
-    footer .footer-links h6 {
-      color: #929292;
-      padding: 0 0 25px;
-    }
-
-    footer .footer-links ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    footer .footer-links ul li {
-      padding: 0 0 20px;
-    }
-
-    footer .footer-links ul li a {
-      color: #929292;
-    }
-
-    footer .bottom{
-      padding: 25px 0 0;
-      border-top: solid 1px #313131;
-      color: #929292;
-    }
-
-    footer .bottom *{
-      margin: 0;
-    }
-
-
-    main#main-hero{
-      height: calc(90vh - 141px);
-      position: relative;
-    }
-
-    main#main-hero img{
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      object-position: bottom;
-    }
-
-    main#main-hero .caption{
-      top: 50%; transform: translate(0,-50%);position: absolute;
-    }
-
-    main#main-hero .caption .heading-text{
-      margin-bottom: 13px;
-    }
-
-    main#main-hero .caption .heading-text h2{
-      color: #fafafa;
-      font-weight: 900;
-      letter-spacing: 2px;
-    }
-
-    main#main-hero .caption .body-text{
-      color: #fafafa;
-      margin-right: 840px;
-          }
-
-    section#top-action{
-      background-color: #222;
-    }
-
-    /* section#erp-models{
-      background-color: #f6f3ee;
-    } */
-
-    section#erp-models .wrapper{
-      box-shadow: 0 0.125rem 0.625rem 0 rgb(0 0 0 / 20%);
-    transition: box-shadow 0.2s;
-    background-color: #ffffff;
-    }
-
-    section#erp-models .wrapper .img{
-      height: 175px;
-      background-color: blanchedalmond;
-    }
-
-    section#erp-models .wrapper .body{
-      background: #ffffff;
-      padding: 25px;
-    }
-
-    .swiper-container {
-        width: 100%;
-        height: 100%;
-    }
-    .swiper-slide {
-        font-size: 18px;
-    }
-    .swiper-slide #icon{
-      text-align: center;
-      margin-bottom: 8px;
-
-    }
-
-    .swiper-slide #text{
-      text-align: center;
-      color: 18px;
-      color: #A1A1A1;
-    }
-
-    @media only screen and (min-width: 768px) {
-
-      .navbar-light .navbar-brand img{
-        width: 165px;
-      }
-
-      .dropdown-item{
-        font-size: 15px;
-        color: #3c3c3c;
-        padding-left: 10px;
-      }
-      section{
-        padding: 6vh 0;
-        background-color: #ffffff;
-      }
-
-      section .section-title{
-        text-align: center;
-      }
-
-      section .section-title h1{
-        color: #A1A1A1;
-        font-weight: 300;
-      }
-      .navbar {
-        padding: 0;
-      }
-
-      .navbar-light .navbar-nav .nav-link{
-      padding-top: 30px !important;
-      padding-bottom: 30px !important;
-    }
-      .navbar-expand-lg .navbar-nav .nav-link {
-        padding-left: 1.8rem;
-        padding-right: 1.8rem;
-      }
-
-      .navbar-light .navbar-nav .show>.nav-link {
-        color: darksalmon;
-      }
-
-      .navbar-light .navbar-nav .nav-link:focus,
-      .navbar-light .navbar-nav .nav-link:hover {
-        color: darksalmon;
-      }
-
-      #top-bar {
-        padding: 5px 0;
-        background-color: #292929;
-        display: block;
-      }
-
-      #top-bar ul {
-        margin: 0 auto;
-        padding: 0;
-        list-style: none;
-        float: right;
-        display: block;
-        width: 100%;
-        text-align: right;
-      }
-
-      #top-bar li {
-        margin: 0 20px 0 20px;
-        display: inline-block;
-      }
-
-      #top-bar li a {
-        color:#A1A1A1;
-        font-size: 0.85rem;
-      }
-
-      #top-bar #divider {
-        color:#A1A1A1;
-      }
-
-      #top-bar li a i{
-        color: #A1A1A1;
-      }
-
-      .navbar-expand-lg .navbar-nav .dropdown-menu {
-        background-color: #ffffff;
-        border: 0;
-        -webkit-box-shadow: 0 0 50px 0 rgb(0 0 0 / 20%);
-        box-shadow: 0 0 50px 0 rgb(0 0 0 / 20%);
-        font-size: 14px;
-        border-radius: 0;
-        padding: 18px 85px 18px 25px;
-      }
-
-      .navbar-expand-lg .navbar-nav .dropdown-menu h6 {
-        padding-left: 10px;
-      }
-
-      .dropdown-menu>li a:hover,
-      .dropdown-menu>li.show {
-        background: transparent;
-        color: inherit;
-        text-decoration: underline;
-      }
-
-    }
-  </style>
 </head>
 
 <body>
+
+  <div id="wrapper">
+
+
+ <!-- Sidebar -->
+ <div id="sidebar-wrapper">
+  <ul class="sidebar-nav">
+    <li>
+      <a href="#" class="btn contact-btn">Contact Us</a>
+    </li>
+    <li>
+      <a href="#">Services</a>
+    </li>
+    <li>
+      <a href="#">Solutions</a>
+    </li>
+    <li>
+      <a href="#">Modules</a>
+    </li>
+    <li>
+      <a href="#">About</a>
+    </li>
+    <li>
+      <a href="#">Case Studies</a>
+    </li>
+    <li>
+      <a href="#">Resources</a>
+    </li>
+    <li>
+      <a href="#">Blog</a>
+    </li>
+    <li>
+      <a href="#">Career</a>
+    </li>
+  </ul>
+</div>
+<!-- /#sidebar-wrapper -->
+
+
+
+
+
+
+
+
+
   <header>
     <div id="top-bar">
       <div class="container">
@@ -817,13 +95,13 @@ section.module.parallax-3 {
           aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#"><img src="images/logo-test.png"</a>
+        <a class="navbar-brand" href="#"><img src="images/logo-test.png">
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
+            <!-- <li class="nav-item active">
               <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item dropdown">
+            </li> -->
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
                 href="#">About Us</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -832,14 +110,17 @@ section.module.parallax-3 {
                 <li><a class="dropdown-item" href="#">Customer</a></li>
                 <li><a class="dropdown-item" href="#">Testimonial</a></li>
               </ul>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#top-action">Our Top Action</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Products</a>
+              <a class="nav-link" href="#walk-through">Walk Through</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">Education ERP</a>
-            </li>
-            <li class="nav-item dropdown">
+            </li> -->
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
                 href="#">Insights</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -848,10 +129,13 @@ section.module.parallax-3 {
                 <li><a class="dropdown-item" href="#">FAQ's</a></li>
                 <li><a class="dropdown-item" href="#">Media News</a></li>
               </ul>
-            </li>
-            <li class="nav-item">
+            </li> -->
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
-            </li>
+            </li> -->
+          </ul>
+          <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+            <a href="#menu-toggle" class="btn btn-secondary float-right" id="menu-toggle"><span class="fa fa-bars"></span></a></a>
           </ul>
         </div>
       </div>
@@ -881,10 +165,7 @@ section.module.parallax-3 {
       <div class="col section-title">
       <h1>Our Top Action</h1>
       </div>
-
-
-
-      <div class="col mt-5">   
+      <div class="col wrapper">   
         <!-- Slider main container -->
         <div class="swiper-container">
             <!-- Additional required wrapper -->
@@ -912,310 +193,75 @@ section.module.parallax-3 {
 </section>
 
 
-<section id="erp-models" class="module parallax-1" data-type="background" data-speed="10">
+<section id="walk-through" class="module parallax-1" data-type="background" data-speed="10">
+  <div class="container">
+  <div class="caption">
+    <div class="heading-text">
+    <h2>Bringing Impactful Results on Campus</h2>
+    </div>
+    <div class="body-text">
+      Clocktos, a Modern ERP software for educational institutions. It helps any size of educational institute to manage students, teachers, non-teaching staffs, courses, and academic programs with our Educational ERP Software.
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="" class="module parallax-2" data-type="background" data-speed="10">
+  <div class="container">
+  <div class="caption">
+    <div class="heading-text">
+    <h2>Covering All Institute Needs</h2>
+    </div>
+    <div class="body-text">
+      Our Educational ERP software build in high-quality solutions while utilizing the most recent tech capabilities. The range of our services is wide as we have a tech stack that would satisfy all the possible modern requirements of the IT business. We are keen on but not limited to delivering the 
+    </div>
+  </div>
+</div>
+</section>
+<section id="top-action">
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
-        Title text here
+      <div class="col section-title">
+      <h1>Our Top Action</h1>
       </div>
-      <div class="col-md-9">
-        <div class="row row-v-spacing">
-          <div class="col-md-4">
-            <div class="wrapper">
-              <div class="img">
-                <img src="#">
-              </div>
-              <div class="body">
-              <div class="title">
-                <h5>Title Here</h5>
-              </div>
-              <div class="desc">
-                <p>Description here ...</p>
-              </div>
-              </div>
+      <div class="col wrapper">   
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" data-swiper-autoplay="2000"><div id="icon"><img src="images/icons/support.png" width="70"></div><div id="text">Support</div></div>
+                <div class="swiper-slide" data-swiper-autoplay="2000"><div id="icon"><img src="images/icons/ai.png" width="70"></div><div id="text">Artificial Intelligence </div></div>
+                <div class="swiper-slide" data-swiper-autoplay="2000"><div id="icon"><img src="images/icons/security.png" width="70"></div><div id="text">Multi-Level Security</div></div>
+                <div class="swiper-slide" data-swiper-autoplay="2000"><div id="icon"><img src="images/icons/institutions.png" width="70"></div><div id="text">Multiple Institutions</div></div>
+                <div class="swiper-slide" data-swiper-autoplay="2000"><div id="icon"><img src="images/icons/erp.png" width="70"></div><div id="text">ERP</div></div>
+                <div class="swiper-slide" data-swiper-autoplay="2000"><div id="icon"><img src="images/icons/cloud.png" width="70"></div><div id="text">Cloud</div></div>
+                <div class="swiper-slide" data-swiper-autoplay="2000"><div id="icon"><img src="images/icons/try-buy.png" width="70"></div><div id="text">Try & Buy</div></div> 
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="wrapper">
-              <div class="img">
-                <img src="#">
-              </div>
-              <div class="body">
-              <div class="title">
-                <h5>Title Here</h5>
-              </div>
-              <div class="desc">
-                <p>Description here ...</p>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="wrapper">
-              <div class="img">
-                <img src="#">
-              </div>
-              <div class="body">
-              <div class="title">
-                <h5>Title Here</h5>
-              </div>
-              <div class="desc">
-                <p>Description here ...</p>
-              </div>
-              </div>
-            </div>
-          </div>
+    
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
         </div>
-        <div class="row row-v-spacing">
-          <div class="col-md-4">
-            <div class="wrapper">
-              <div class="img">
-                <img src="#">
-              </div>
-              <div class="body">
-              <div class="title">
-                <h5>Title Here</h5>
-              </div>
-              <div class="desc">
-                <p>Description here ...</p>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="wrapper">
-              <div class="img">
-                <img src="#">
-              </div>
-              <div class="body">
-              <div class="title">
-                <h5>Title Here</h5>
-              </div>
-              <div class="desc">
-                <p>Description here ...</p>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="wrapper">
-              <div class="img">
-                <img src="#">
-              </div>
-              <div class="body">
-              <div class="title">
-                <h5>Title Here</h5>
-              </div>
-              <div class="desc">
-                <p>Description here ...</p>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row row-v-spacing">
-          <div class="col-md-4">
-            <div class="wrapper">
-              <div class="img">
-                <img src="#">
-              </div>
-              <div class="body">
-              <div class="title">
-                <h5>Title Here</h5>
-              </div>
-              <div class="desc">
-                <p>Description here ...</p>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="wrapper">
-              <div class="img">
-                <img src="#">
-              </div>
-              <div class="body">
-              <div class="title">
-                <h5>Title Here</h5>
-              </div>
-              <div class="desc">
-                <p>Description here ...</p>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="wrapper">
-              <div class="img">
-                <img src="#">
-              </div>
-              <div class="body">
-              <div class="title">
-                <h5>Title Here</h5>
-              </div>
-              <div class="desc">
-                <p>Description here ...</p>
-              </div>
-              </div>
-            </div>
-          </div>
-      </div>
+    </div>   
+
+
+
+
     </div>
   </div>
 </section>
-
-<section id="erp-models" class="module parallax-2" data-type="background" data-speed="10">
+<section id="" class="module parallax-3" data-type="background" data-speed="10">
   <div class="container">
-    <div class="row">
-      <div class="col-md-2">
-        Title text here
-      </div>
-      <div class="col-md-10">
-        <div class="row row-v-spacing">
-          <div class="col-md-4">
-            <div class="wrapper">
-              <div class="img">
-                <img src="#">
-              </div>
-              <div class="body">
-              <div class="title">
-                <h5>Title Here</h5>
-              </div>
-              <div class="desc">
-                <p>Description here ...</p>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="wrapper">
-              <div class="img">
-                <img src="#">
-              </div>
-              <div class="body">
-              <div class="title">
-                <h5>Title Here</h5>
-              </div>
-              <div class="desc">
-                <p>Description here ...</p>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="wrapper">
-              <div class="img">
-                <img src="#">
-              </div>
-              <div class="body">
-              <div class="title">
-                <h5>Title Here</h5>
-              </div>
-              <div class="desc">
-                <p>Description here ...</p>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row row-v-spacing">
-          <div class="col-md-4">
-            <div class="wrapper">
-              <div class="img">
-                <img src="#">
-              </div>
-              <div class="body">
-              <div class="title">
-                <h5>Title Here</h5>
-              </div>
-              <div class="desc">
-                <p>Description here ...</p>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="wrapper">
-              <div class="img">
-                <img src="#">
-              </div>
-              <div class="body">
-              <div class="title">
-                <h5>Title Here</h5>
-              </div>
-              <div class="desc">
-                <p>Description here ...</p>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="wrapper">
-              <div class="img">
-                <img src="#">
-              </div>
-              <div class="body">
-              <div class="title">
-                <h5>Title Here</h5>
-              </div>
-              <div class="desc">
-                <p>Description here ...</p>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row row-v-spacing">
-          <div class="col-md-4">
-            <div class="wrapper">
-              <div class="img">
-                <img src="#">
-              </div>
-              <div class="body">
-              <div class="title">
-                <h5>Title Here</h5>
-              </div>
-              <div class="desc">
-                <p>Description here ...</p>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="wrapper">
-              <div class="img">
-                <img src="#">
-              </div>
-              <div class="body">
-              <div class="title">
-                <h5>Title Here</h5>
-              </div>
-              <div class="desc">
-                <p>Description here ...</p>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="wrapper">
-              <div class="img">
-                <img src="#">
-              </div>
-              <div class="body">
-              <div class="title">
-                <h5>Title Here</h5>
-              </div>
-              <div class="desc">
-                <p>Description here ...</p>
-              </div>
-              </div>
-            </div>
-          </div>
-      </div>
+  <div class="caption">
+    <div class="heading-text">
+    <h2>Delivering Modern Educational ERP Software Solutions</h2>
+    </div>
+    <div class="body-text">
+      Clocktos covers a wide range of benefit and delivers tailor-made solutions to our client across the Country. Our specialists always work hard on the expansion of our client's specific needs.
     </div>
   </div>
+</div>
 </section>
-
   <footer>
     <div class="container">
       <div class="row">
@@ -1392,11 +438,15 @@ section.module.parallax-3 {
       </div>
     </div>
   </footer>
+
+
+  </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
@@ -1452,11 +502,6 @@ section.module.parallax-3 {
   </script>
 
 
-<script>
-  jarallax(document.querySelectorAll('.jarallax'), {
-    speed: 0.2
-});
-</script>
 
 
 <script>
@@ -1477,6 +522,58 @@ $(document).ready(function(){
         }); 
     });    
 });
+</script>
+
+
+<script>
+  $("#menu-toggle").click(function (e) {
+  e.preventDefault();
+  $("#wrapper").toggleClass("toggled");
+});
+
+</script>
+
+
+<script>
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+    
+    //smoothscroll
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+        
+        $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+      
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top-81
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
+});
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('#menu-center a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#menu-center ul li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}
 </script>
 </body>
 
