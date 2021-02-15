@@ -467,13 +467,98 @@
 
 
 
+#page-header{
+    background-color: burlywood;
+    padding: 35px 0;
+}
+
+#page-header.services-header{
+    background-image: url(images/services-header.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #f7f7f7;
+}
+
+#page-header h1{
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+#page-header p{
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 0;
+    line-height: 30px;
+}
+
+#page-header .breadcrumb{
+    list-style: none;
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+#page-header .breadcrumb li{
+    float: left;
+}
+
+#page-header .breadcrumb li a{
+    font-size: 15px;
+    color: #fafafa;
+}
+
+#services{
+    background: #fafafa;
+}
+
+#services .srvc{
+    margin: 15px 15px 55px;
+}
+#services .srvc .img{
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+#services .srvc .img img{
+    display: block;
+    margin: 0 auto;
+    width: 70px;
+}
+
+#services .srvc h5{
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+#services .srvc a{
+    color: darksalmon;
+}
 
 
+#blog{
+}
 
-      #wrapper.toggled {
+#blog .image{
+    height: 180px;
+    background-color: #252525;
+    float: left;
+    width: 100%;
+}
+
+#blog img #wrapper.toggled {
         padding-right: 250px;
       }
 
+      #blog .title{
+          margin: 15px 0;
+          float: left;
+          width: 100%;
+      }
+      #blog .title h4{
+          font-weight: 300;
+          margin: 0;
+      }
 
       #sidebar-wrapper {
         z-index: 1000;
